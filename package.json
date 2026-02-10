@@ -1,0 +1,19 @@
+{
+  "name": "njarebpfe-login",
+  "version": "1.0.0",
+  "description": "Application de connexion React + Node.js",
+  "scripts": {
+    "install-back": "cd back && npm install",
+    "install-front": "cd front && npm install",
+    "install-all": "npm run install-back && npm run install-front",
+    "start-back": "cd back && npm run dev",
+    "start-front": "cd front && npm start",
+    "dev": "concurrently \"npm run start-back\" \"npm run start-front\""
+  },
+  "keywords": ["react", "nodejs", "login", "auth", "jwt"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
